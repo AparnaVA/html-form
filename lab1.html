@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>forms</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<label for="name">Name &emsp;&emsp;&emsp;&emsp;:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" value="" maxlength="25" required><br><br>
+			<label for="mail">Email &emsp;&emsp;&emsp;&emsp;:</label>
+			<input type="text" id="mail"  name="mail" value="" placeholder="test@example.com" autofocus required><br><br>
+			<label for="pwd">Password &nbsp;&nbsp;&emsp;&emsp;:</label>
+			<input type="Password" id="pwd" name="pwd" value="" required pattern=".{6,}" title="Password must have atleast 6 charector"><br><br>
+			<label for="category">Category &nbsp;&nbsp;&nbsp;&emsp;&emsp;:</label>
+			<select id="category" name="category">
+				<option value="category">Student</option>
+				<option value="category">Employee</option>
+				<option value="category" selected>Freelancer</option>
+			</select><br><br>
+			<label for="date">Event Date &emsp;&emsp;:</label>
+			<input type="date" id="date" name="date" value="" required><br><br>
+
+			<label for="ticket" >Tickets &emsp;&nbsp;&nbsp;&emsp;&emsp;: </label>
+			<input type="radio" id="ticket" name="ticket" value="1 Ticket" required><span>1 Ticket</span>	<!--Radio button-->
+			<input type="radio" id="ticket" name="ticket" value="2 Tickets" checked><span>2 Tickets</span>
+			<input type="radio" id="ticket" name="ticket" value="3 Tickets"><span>3 Tickets</span><br><br>
+
+			<label for="onlinepayement">Online Payment :</label>
+			<input type="checkbox" name="onlinepayement" required><span>yes</span>&nbsp;	<!--Checkbox-->
+			<input type="checkbox" name="onlinepayement" required><span>No</span><br><br>
+
+			<label for="notes">Notes</label><br>
+			<textarea rows="5" cols="50" id="notes" placeholder="Please enter the notes here" name="discription">
+			</textarea>
+			<br><br>
+			<input type="submit" name="submit" value="submit">
+		</fieldset>
+	</form>
+
+</body>
+</html>
